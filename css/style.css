@@ -72,7 +72,7 @@ h1{font-size: 4rem;}  h2{font-size: 3rem;}  h3{font-size: 2.25rem;}  h4{font-siz
     background-size: cover;
     background-repeat: no-repeat;
     height: calc(100vh - 108px);
-    background: url(https://github.com/DockorSherowLinZ/week_three_project_home_work_layout_course/blob/main/image/banner.png?raw=true) center center;
+    background: url(../image/banner.png?raw=true) center center;
 }
 .banner{
     display: flex;
@@ -142,7 +142,7 @@ h1{font-size: 4rem;}  h2{font-size: 3rem;}  h3{font-size: 2.25rem;}  h4{font-siz
 }
 /* cobranding */
 .cobranding{
-    background: url(https://github.com/DockorSherowLinZ/week_three_project_home_work_layout_course/blob/main/image/bg.png?raw=true) center center;
+    background: url(../image/bg.png?raw=true) center center;
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 60px;
@@ -191,7 +191,7 @@ h1{font-size: 4rem;}  h2{font-size: 3rem;}  h3{font-size: 2.25rem;}  h4{font-siz
 }
 .cobranding .image2{
     background-repeat: no-repeat;
-    background: url(https://github.com/DockorSherowLinZ/week_three_project_home_work_layout_course/blob/main/image/product-9.png?raw=true) center / cover;
+    background: url(../image/product-9.png?raw=true) center / cover;
     width: calc(100vw - 0px);
     height: 455px;
 }
