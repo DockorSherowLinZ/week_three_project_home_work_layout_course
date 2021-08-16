@@ -1,41 +1,32 @@
-*{
-    font-family: 'Roboto' , 'Noto Sans CJK' , 'Microsoft JhengHei UI' , -apple-system, BlinkMacSystemFont, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+*, *::before, *::after{box-sizing: border-box;}
+body{
+    font-family: -apple-system , BlinkMacSystemFont , 'Roboto' , 'Noto Sans CJK' , 'Microsoft JhengHei UI' ,  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     list-style: none;
-}
-/* font-size , line-height */
-h1{font-size: 64px;line-height: 96px;}  h2{font-size: 48px;line-height: 72px;}  h3{font-size: 36px;line-height: 54px;}  h4{font-size: 24px;line-height: 36px;}  h5{font-size: 20px;}  h6{font-size: 16px;line-height: 24px;}  p{font-size: 14px;line-height: 21px;}
-/* 圖片 */
-img{
-    min-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* header */
-.header{
-    background-color: #AA0601;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    font-size: 16px;
     margin: 0 auto;
-    height: 108px;
 }
-.header .logo{
-    margin-left: 88px;
-    display: block;
-}
-.header ul{
-    display: flex;
-    justify-content: space-between;
-    margin-right: 88px;
-}
-.header ul li{
-    padding-left: 64px;
-}
-.header h5{
-    color: white;
-}
+img{display: block;}
+a{text-decoration: none;}
+
+/* 主色 */
+.background-primary{background-color: #AA0601;}  .background-secondary{background-color: #FBF2F2;}
+/* 字色 */
+.text-primary{color: #650300;}  .text-secondary{color: #AA0601;} .text-light{color: #fff;}
+/* 間距 */
+.mb-1{margin-bottom: 0.5rem;}  .mb-2{margin-bottom: 1rem;}  .mb-3{margin-bottom: 2rem;}  .mb-4{margin-bottom: 2.5rem;} .mb-5{margin-bottom: 3.75rem;}  .mb-6{margin-bottom: 5rem;}
+.mb-s{margin-bottom: 4px;}
+/* 行高 */
+h1,h2,h3,h4,h5,h6,p{line-height: 1.5;}
+/* 字體大小 */
+h1{font-size: 4rem;}  h2{font-size: 3rem;}  h3{font-size: 2.25rem;}  h4{font-size: 1.5rem;}  h5{font-size: 1.25rem;}  h6{font-size: 1rem;}  p{font-size: 0.875rem;}  .font-lg{font-size: 4.5rem;}
+/* 裝飾 */
+.font-italic{font-style: italic;}  .font-unset{font-style:unset ;}
+/* 字重 */
+.font-light{font-weight: 100;}  .font-normal{font-weight: 300;}  .font-median{font-weight: 500;}  .font-bord{font-weight: 700;}
+/* grid */
+.grid{margin: 0 auto; width: 1110px;}
+.grid-m{margin: 0 auto; width: 730px;}
 /* PC */
 .container{
     max-width: 1140px; /*1110px+30px，為了收縮寬度時的美觀，而增加二分之一的gap，俗稱 gutter。*/
@@ -54,7 +45,30 @@ img{
         max-width: 375px; /*345px+30px，為了收縮寬度時的美觀，而增加二分之一的gap，俗稱 gutter。*/
     }
 }
-.container .banner{
+
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 108px;
+}
+.header .logo{
+    margin-left: 88px;
+}
+.header ul{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 88px;
+}
+.header ul li{
+    padding-left: 64px;
+}
+.header h5{
+    color: white;
+}
+/* banner */
+.banner{
     background-size: cover;
     background-repeat: no-repeat;
     height: calc(100vh - 108px);
@@ -66,100 +80,270 @@ img{
     align-content: center;
     align-items: center;
 }
-.container .title{
-    color: #650300;
+.banner .title{
     text-align: right;
-    margin-left: 939px;
 }
-.container h3{
-    font-family: 'Noto Sans CJK SC Regular' , sans-serif  ;
-}
-.container h1{
-    font-family: 'Source Han Sans TW,Bold' , 
-    sans-serif;
-    font-weight: bolder;
-}
+/* feature */
 .feature{
-    margin: 0 auto;
     text-align: center;
-    color: #650300;
-    background-color: #FBF2F2;
     padding-top: 60px;
     padding-bottom: 80px;
+    margin-bottom: 60px;
 }
-.feature h2{
-    font-family: 'Noto Sans CJK', sans-serif;
-    font-weight: 700;
-    margin-bottom: 40px;
-}
-.feature ul{
+.content{
     display: flex;
     justify-content: space-between;
-    align-content: center;
-    margin: 0 405px;
 }
-.feature ul li{
+.content-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 255px;
 }
-.feature ul li .image{
+.content-image{
     display: flex;
-    align-items: center;
+    align-content: center;
     width: 100px;
     height: 100px;
-    margin: 0 auto;
-    display: block;
 }
-.feature h4{
-    font-weight: bold;
-    margin-top: 16px;
+.feature h2{
+    font-weight: bolder;
+}
+.content-title h4{
     margin-bottom: 8px;
-}
-.feature h6{
-    font-family: 'Source Han Sans TW, Regular' , sans-serif;
-    color: black;
 }
 /* classical */
 .classical{
-    margin: 0 auto;
-    padding-top: 60px;
-    padding-bottom: 80px;
-}
-.classical h2{
     text-align: center;
-    color: #650300;
-    font-size: 48px;
-    font-weight: bolder;
-    margin-bottom: 40px;
-}
-.classical a img{
-    margin-right: 30px;
-    width: 635px;
-    display: block;
 }
 .classical ul{
-    margin-left: 405px;
-    margin-right: 405px;
+    margin-bottom: 80px;
 }
-.classical ul li{
+.classical li{
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-bottom: 32px;
+}
+.classical .item2{
+    flex-direction: row-reverse;
 }
 .classical .icon{
     display: flex;
-    align-content: center;
+    align-items: center;
+    margin-left: 32px;
+    margin-right: 30px;
+}
+.classical a img{
+    width: 635px;
 }
 .classical .icon img{
-    display: block;
-    width: 48px;
-    margin-right: 8px;
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
 }
-.classical .text{
-    color: #AA0601;
-    font-family: 'Roboto' , sans-serif;
-    font-style: italic;
-    font-size: 48px;
-    line-height: 72px;
-    font-weight: bolder;
+/* cobranding */
+.cobranding{
+    background: url(https://github.com/DockorSherowLinZ/layout_course/blob/main/week_three_project_home_work_layout_course/image/bg.png?raw=true) center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+.cobranding h2{
+    margin-bottom: 40px;
+}
+.cobranding ul{
+    display: flex;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(540px,1fr));
+    gap: 30px; */
+}
+.cobranding ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cobranding ul li p{
+    position: relative;
+    width: 100%;    height: 100%;
+    display: flex;
+    justify-content: center;    align-items: center;
+    z-index: 0;
+}
+.cobranding ul li p::after{
+    position: absolute;
+    content: "";
+    left: 0;    top: 0;
+    width: 100%;    height: 100%;
+    display: flex;
+    justify-content: center;    align-items: center;
+    background-color: #fff;
+    opacity: 0.5;
+    z-index: -1 ;
+}
+.cobranding .image1{
+    background-repeat: no-repeat;
+    background: url(https://github.com/DockorSherowLinZ/layout_course/blob/main/week_three_project_home_work_layout_course/image/product-8.png?raw=true) center /cover;
+    width: calc(100vw - 0px);
+    height: 455px;
+    margin-right: 30px;
+}
+.cobranding .image2{
+    background-repeat: no-repeat;
+    background: url(https://github.com/DockorSherowLinZ/layout_course/blob/main/week_three_project_home_work_layout_course/image/product-9.png?raw=true) center / cover;
+    width: calc(100vw - 0px);
+    height: 455px;
+}
+/* recommendation */
+.recommendation h2{
+    text-align: center;
+}
+.recommendation ul{
+    display: flex;
+    justify-content: center;
+    text-align-last: left;
+}
+.recommendation li{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 15px;
+    box-shadow: 0px 2px 6px rgba(90, 90, 90, 0.290);
+    height: 460px;
+    border-radius: 4px;
+}
+.recommendation li img{
+    width: 255px;
+    border-radius: 4px 4px 0px 0px;
+}
+.recommendation .custom{
+    padding: 16px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.recommendation .custom .time{
+    color: #DEE2E6;
+}
+/* contact */
+.contact{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.contact .container h2{
+    margin-top: 60px;
+}
+.contact .container h5{
+    text-align: left;
+}
+.contact li{
+    text-align-last: left;
+}
+.contact .input{
+    border: 1px solid #000;
+}
+.contact .check-box{
+    height: 24px;
+    display: flex;
+    align-items: center;
+}
+.contact .check-box img{
+    margin-right: 4px;
+}
+.contact .input h6{
+    margin: 12px auto 14px 16px;
+    opacity: 20%;
+}
+.contact .container .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 54px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact .button-text{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+/* footer */
+.footer{
+    padding-top: 32px;
+    padding-bottom: 40px;
+}
+.footer .item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.footer h3{
+    line-height: 48px;
+}
+.footer .content li{
+    margin-right: 48px;
+}
+.footer .social{
+    display: flex;
+    align-items: center;
+}
+.footer .social li{
+    margin-left: 32px;
+}
+.footer .tel{
+    display: flex;
+    align-items: center;
+}
+.footer .tel-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+    width: 48px;
+    height: 48px;
+    box-sizing: border-box;
+}
+.footer .tel-icon img{
+    width: 36px;
+    height: 36px;
+}
+.footer .email{
+    display: flex;
+    align-content: center;
+    margin-bottom: 24px;
+}
+.footer .email-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+    width: 48px;
+    height: 48px;
+}
+.footer .email-icon img{
+    width: 40px;
+    height: 32px;
+}
+.footer .divider{
+    border-bottom: 1px  solid   #fff;
+}
+.footer .copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .copyright h6{
+    line-height: 21px;
+}
+.footer .copyright .provision{
+    display: flex;
+    align-items: center;
+}
+.footer .copyright .provision li{
+    margin-left: 48px;
+    line-height: 21px;
 }
