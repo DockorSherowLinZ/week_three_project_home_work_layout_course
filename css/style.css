@@ -5,6 +5,13 @@
 }
 /* font-size , line-height */
 h1{font-size: 64px;line-height: 96px;}  h2{font-size: 48px;line-height: 72px;}  h3{font-size: 36px;line-height: 54px;}  h4{font-size: 24px;line-height: 36px;}  h5{font-size: 20px;}  h6{font-size: 16px;line-height: 24px;}  p{font-size: 14px;line-height: 21px;}
+/* 圖片 */
+img{
+    min-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* header */
 .header{
     background-color: #AA0601;
@@ -29,9 +36,23 @@ h1{font-size: 64px;line-height: 96px;}  h2{font-size: 48px;line-height: 72px;}  
 .header h5{
     color: white;
 }
-/* container */
+/* PC */
 .container{
+    max-width: 1140px; /*1110px+30px，為了收縮寬度時的美觀，而增加二分之一的gap，俗稱 gutter。*/
     margin: 0 auto;
+    padding: 0 15px;
+}
+/* 平板 */
+@media (max-width: 768px){
+    .container{
+        max-width: 720px; /*690px+30px，為了收縮寬度時的美觀，而增加二分之一的gap，俗稱 gutter。*/
+    }
+}
+/* 手機 */
+@media (max-width: 375px){
+    .container{
+        max-width: 375px; /*345px+30px，為了收縮寬度時的美觀，而增加二分之一的gap，俗稱 gutter。*/
+    }
 }
 .container .banner{
     background-size: cover;
