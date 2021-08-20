@@ -72,7 +72,7 @@ h1{font-size: 4rem;}  h2{font-size: 3rem;}  h3{font-size: 2.25rem;}  h4{font-siz
     background-size: cover;
     background-repeat: no-repeat;
     height: calc(100vh - 108px);
-    background: url(./image/banner.png) center center;
+    background: url(../image/banner.png) center center;
 }
 .banner{
     display: flex;
@@ -142,7 +142,7 @@ h1{font-size: 4rem;}  h2{font-size: 3rem;}  h3{font-size: 2.25rem;}  h4{font-siz
 }
 /* cobranding */
 .cobranding{
-    background: url(./image/bg.png) center center;
+    background: url(../image/bg.png) center center;
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 60px;
@@ -184,7 +184,7 @@ h1{font-size: 4rem;}  h2{font-size: 3rem;}  h3{font-size: 2.25rem;}  h4{font-siz
 }
 .cobranding .image1{
     background-repeat: no-repeat;
-    background: url(./image/product-8.png) center /cover;
+    background: url(../image/product-8.png) center /cover;
     width: calc(100vw - 0px);
     height: 455px;
     margin-right: 30px;
